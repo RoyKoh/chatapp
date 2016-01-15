@@ -34,7 +34,7 @@ $(function () {
 * USe socket.on for listening from server
 */
   socket.on('msg', function (incomingMsg) {
-    var decoratedHtml = '' + incomingMsg + ''
+    var decoratedHtml = '' + incomingMsg + '' + String.fromCharCode(13)
     $('#chatsContainer').append(decoratedHtml)
   })
 })

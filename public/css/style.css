@@ -8,7 +8,7 @@ background: orange;
   border: 2px inset #eee;
   overflow: auto;
   margin-bottom: 5px;
-  background: #FFF;
+  background: yellow;
 }
 
 #myMsg,
@@ -16,12 +16,14 @@ background: orange;
 #username {
   width: 300px;
   height: 30px;
-  margin-top: 5px
+  margin-top: 5px;
+  display: block;
 }
 
 .msgfield {
   padding: 5px;
   background: skyblue;
+  display: block;
   margin: 10px;
   border-radius: 5px;
   border: 3px outset #CED4F5;
