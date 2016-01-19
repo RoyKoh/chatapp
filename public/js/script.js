@@ -23,7 +23,7 @@ $(function () {
 *  for decoration purpose only....
 */
       var userName = $('#username').val()
-      var completeMsg = userName + ': ' + msg
+      var completeMsg = userName + ': ' + msg + '\r\n'
 // use socket.emit to send something to the server
       socket.emit('msg', completeMsg)
     }
@@ -34,7 +34,7 @@ $(function () {
 * USe socket.on for listening from server
 */
   socket.on('msg', function (incomingMsg) {
-    var decoratedHtml = '' + incomingMsg + '' + String.fromCharCode(13)
+    var decoratedHtml = '' + incomingMsg + ''
     $('#chatsContainer').append(decoratedHtml)
   })
 })
